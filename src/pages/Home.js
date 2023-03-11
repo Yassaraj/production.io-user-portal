@@ -1,10 +1,17 @@
 import React from "react";
+import TopNavbar from "../components/common/TopNavBar";
+import HomeIcon from '@mui/icons-material/Home';
+
 
 
 export default function Home(){
     return(
         <>
-            <h1> Home(Projects) Page</h1>
+            <TopNavbar
+            title="Projects"
+            buttonName="New Project"
+            icon={<HomeIcon />}
+            />  
         </>
     )
 }

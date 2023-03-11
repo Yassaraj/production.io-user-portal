@@ -14,19 +14,42 @@ import { PanoramaVerticalSelectOutlined } from '@mui/icons-material';
 
 function App() {
   return (
+    <>
     <BrowserRouter>
-      <Routes>
-        <Route exact path='/login' element={<Login/>}/>
-        <Route exact path='/register' element={<Register/>}/>
-        <Route path='/*' element={<SideNavBar/>}/>
-      </Routes>
+      <div className="container">
+        <SideNavBar style={{ zIndex: 1000 }}/>
+        <div className="main-content">
+          <Routes>
+            <Route exact path='/' element={<Home/>}/>
+            <Route exact path='/scripts' element={<ScriptPage/>}/>
+            <Route exact path='/moodboards' element={<MoodBoards/>}/>
+            <Route exact path='/callsheet' element={<CallSheet/>}/>
+  
+            <Route exact path='/login' element={<Login/>}/>
+            <Route exact path='/register' element={<Register/>}/>
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
+    
+    
+    {/* <BrowserRouter>
+    <div className="container"> 
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/scripts' element={<ScriptPage/>}/>
         <Route exact path='/moodboards' element={<MoodBoards/>}/>
         <Route exact path='/callsheet' element={<CallSheet/>}/>
       </Routes>
-    </BrowserRouter>
+    </div>
+
+      <Routes>
+        <Route exact path='/login' element={<Login/>}/>
+        <Route exact path='/register' element={<Register/>}/>
+        <Route path='/*' element={<SideNavBar/>}/>
+      </Routes>
+    </BrowserRouter> */}
+    </>
   );
 }
 
