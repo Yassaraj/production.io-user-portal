@@ -31,17 +31,25 @@ export default function Login(){
                     >
                     {({ isSubmitting }) => (
                         <Form>
-                             <label className="form-label">Email Address</label>
-                            <div>
-                                <Field type="email" name="email" className="field" style={{ marginBottom: '30px' }}/>
+                             <label className="form-label" style={{ marginLeft: '10px' }}>Email Address</label>
+                            <div style={{ marginBottom: '30px' }}>
+                                <Field type="email" name="email" className="field"/>
                             </div>
-                            <label className="form-label">Password</label>
-                            <div>
-                                <Field type="password" name="password" className="field" style={{ marginBottom: '30px' }}/>
+                            <label className="form-label" style={{ marginLeft: '10px' }}>Password</label>
+                            <div style={{ marginBottom: '30px' }}>
+                                <div><Field type="password" name="password" className="field"/></div>
+                                <div style={{ marginTop: '5px', display: 'flex', justifyContent: 'flex-end' }}>
+                                    <a href="/forgot-password" style={{ color: 'rgba(255, 255, 255, 0.693)' }}>Forgot Password?</a>
+                                </div>
                             </div>
-                        <button type="submit" disabled={isSubmitting} className="submit-button">
-                            LOGIN
-                        </button>
+                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                <button type="submit" disabled={isSubmitting} className="submit-button">
+                                    LOGIN
+                                </button>
+                            </div>
+                        <div style={{ marginTop: '20px', textAlign: 'center' }}>
+                            Don't have an account? <a href="/register" style={{ fontWeight: 'bold',color: 'white' }}>Register here!</a>
+                        </div>
                         </Form>
                     )}
                     </Formik>
