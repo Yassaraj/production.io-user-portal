@@ -5,6 +5,7 @@ import styles from "../../styles/common/topnavbar.css";
 
 const TopNavbar = ({ title, buttonName, icon }) => {
     return (
+      <>
       <header className="Navbar">
         <div className="Toolbar">
           <div className="Logo">
@@ -14,11 +15,15 @@ const TopNavbar = ({ title, buttonName, icon }) => {
             </span>{" "}
           </div>
           <div className="Title">{title}</div>
-          <div>
-            <button className='navBtn'>{buttonName}</button>
-          </div>
+          {buttonName &&
+            <div>
+              <button className='navBtn'>{buttonName}</button>
+            </div>
+          }
         </div>
       </header>
+      <hr></hr>
+      </>
     );
   };
 

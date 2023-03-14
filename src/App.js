@@ -17,7 +17,7 @@ function App() {
     <>
     <BrowserRouter>
       <div className="container">
-        <SideNavBar style={{ zIndex: 1000 }}/>
+        <SideNavBar/>
         <div className="main-content">
           <Routes>
             <Route exact path='/' element={<Home/>}/>

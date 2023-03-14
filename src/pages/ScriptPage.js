@@ -1,9 +1,16 @@
 import React from "react";
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
+import TopNavbar from "../components/common/TopNavBar";
 
 
 export default function ScriptPage(){
     return(
-        <h1>Script Page</h1>
-
+        <>
+            <TopNavbar
+            title="Scripts"
+            buttonName="Import Scripts"
+            icon={<TravelExploreIcon/>}
+            />  
+        </>
     )
 }
