@@ -6,7 +6,7 @@ export default function ProfilePage(){
     return(
         <>
             <TopNavbar
-            title="Profile"
+            title="PROFILE"
             icon={<AccountCircleIcon/>}
             />  
         </>
