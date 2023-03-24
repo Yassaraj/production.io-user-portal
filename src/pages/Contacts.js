@@ -156,7 +156,7 @@ export default function Contacts(){
                         </thead>
                         <tbody>
                             {users.map((user,index) => (
-                                <tr key={user.userId} style={{ backgroundColor: index % 2 === 0 ? '#898989' : '#C2C2C2' }}>
+                                <tr key={user.userId} style={{ backgroundColor: index % 2 === 0 ? '#A4A4A4' : '#C2C2C2' }}>
                                 <td style={{padding: "5px 40px"}}>{user.name}</td>
                                 <td style={{padding: "5px 40px"}}>{user.contactNumber}</td>
                                 <td style={{padding: "5px 40px"}}>{user.email}</td>
