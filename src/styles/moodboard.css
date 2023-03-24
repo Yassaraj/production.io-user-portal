@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+  }
+  
+  .left-column {
+    width: calc(1/7 * 100%);
+    padding: 20px;
+  }
+  
+  .right-column {
+    width: calc(5/7 * 100%);
+    padding: 20px;
+  }
+  
+.Btn{
+    width: 168px;
+    height: 45px;
+    background: #898989;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .shot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .shot img {
+    width: 100%;
+    height: auto;
+  }
+  
