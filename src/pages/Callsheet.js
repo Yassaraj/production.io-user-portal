@@ -7,7 +7,7 @@ export default function CallSheet(){
     return(
         <>
             <TopNavbar
-            title="Call Sheet"
+            title="CALL SHEET"
             icon={<SettingsIcon/>}
             />  
         </>

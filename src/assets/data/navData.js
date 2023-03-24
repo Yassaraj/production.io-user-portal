@@ -2,6 +2,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import SettingsIcon from '@mui/icons-material/Settings';
+import BadgeIcon from '@mui/icons-material/Badge';
+
 
 export const navData = [
     {
@@ -27,5 +29,11 @@ export const navData = [
         icon: <SettingsIcon sx={{ fontSize: 40 }}/>,
         text: "Call Sheet",
         link: "/callsheet"
+    },
+    {
+        id: 4,
+        icon: <BadgeIcon sx={{ fontSize: 40 }}/>,
+        text: "Contacts List",
+        link: "/contactslist"
     },
 ]

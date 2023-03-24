@@ -8,6 +8,7 @@ import Register from './pages/RegistrationPage';
 import ScriptPage from './pages/ScriptPage';
 import MoodBoards from './pages/MoodBoards';
 import CallSheet from './pages/Callsheet';
+import Contacts from './pages/Contacts';
 
 import SideNavBar from './components/common/SideNavBar';
 import { PanoramaVerticalSelectOutlined } from '@mui/icons-material';
@@ -24,6 +25,7 @@ function App() {
             <Route exact path='/scripts' element={<ScriptPage/>}/>
             <Route exact path='/moodboards' element={<MoodBoards/>}/>
             <Route exact path='/callsheet' element={<CallSheet/>}/>
+            <Route exact path='/contactslist' element={<Contacts/>}/>
   
             <Route exact path='/login' element={<Login/>}/>
             <Route exact path='/register' element={<Register/>}/>
