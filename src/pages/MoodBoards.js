@@ -37,7 +37,7 @@ export default function MoodBoards(){
     return(
         <>
             <TopNavbar
-            title="Mood Boards"
+            title="MOOD BOARDS"
             buttonName="New Mood Board"
             icon={<BarChartIcon/>}
             />
