@@ -4,6 +4,7 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import SettingsIcon from '@mui/icons-material/Settings';
 import BadgeIcon from '@mui/icons-material/Badge';
 import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
+import GroupsIcon from '@mui/icons-material/Groups';
 
 
 export const navData = [
@@ -42,5 +43,11 @@ export const navData = [
         icon: <AssignmentTurnedInIcon sx={{ fontSize: 40 }}/>,
         text: "Tasks",
         link: "/tasks"
+    },
+    {
+        id: 6,
+        icon: <GroupsIcon sx={{ fontSize: 40 }}/>,
+        text: "Teams",
+        link: "/teams"
     },
 ]
