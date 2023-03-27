@@ -4,12 +4,10 @@
   
   .left-column {
     width: calc(1/7 * 100%);
-    padding: 20px;
   }
   
   .right-column {
-    width: calc(5/7 * 100%);
-    padding: 20px;
+    width: calc(5.7/7 * 100%);
   }
   
 .Btn{

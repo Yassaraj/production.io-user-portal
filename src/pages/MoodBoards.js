@@ -43,7 +43,7 @@ export default function MoodBoards(){
             />
 
             <div className="container">
-                <div className="left-column">
+                <div className="left-column" style={{backgroundColor:"#1E1E1E",padding:"20px"}}>
                     <h2 className="Title">Shot List</h2>
                     {shots.map((shot) => (
                         <div key={shot.number} style={{padding:"15px",}}>
@@ -51,15 +51,16 @@ export default function MoodBoards(){
                         </div>
                     ))}                    
                 </div>
-                <div className="right-column">
-                    <div style={{display: "flex"}}>
+                <div className="right-column" >
+                    <div style={{display: "flex", width:"100%",paddingLeft:"20px"}}>
                         <h2 className="Title" style={{fontFamily: "poppins", fontSize: "30px"}}>
                             MOVIE NAME <span style={{paddingLeft:"30px",fontFamily: "poppins", fontSize: "25px"}}>SHOTS: {shots.length}</span>
                         </h2>
 
                         <button className='Btn'>New Shot</button>
                     </div>
-                    <div className="grid-container">
+                    <hr></hr>
+                    <div className="grid-container" style={{paddingLeft:"20px"}}>
                             <Grid container direction="row" item xs={10} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                                 {shots.map((shot) => (
                                     <div className="grid-item" key={shot.number} style={{paddingLeft:"30px",paddingRight:"15px"}}>
